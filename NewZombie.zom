@@ -1,0 +1,12 @@
+test_human,1		; attack if human in front
+je,11
+test_zombie,1		; rotate counter-clockwise if zombie in front
+je,9
+test_random		; otherwise, randomly rotate
+je,9	 			 
+rotate,0
+goto,1
+rotate,1
+goto,1	 
+attack			 
+goto,1		

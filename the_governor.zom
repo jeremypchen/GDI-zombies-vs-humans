@@ -1,0 +1,34 @@
+test_zombie,2	; Kills humans and zombies, keeps human and zombie kill counts
+je,17			; Go to ranged attack
+test_zombie,1
+je,21				; Go to melee attack
+test_human,2
+je,25
+test_human,1
+je,29
+test_passable
+je,33
+test_random
+je,15
+rotate,0
+goto,1
+rotate,1
+goto,1
+ranged_attack	; Ranged kill
+mem,0			; Zombie kills stored in mem 0
+inc
+goto,1
+attack			; Zombie kill
+mem,0
+inc
+goto,1
+ranged_attack	; Human kill
+mem,1			; Human kills stored in mem 1
+inc
+goto,1
+attack			; Human kill
+mem,1
+inc
+goto,1
+forward
+goto,1

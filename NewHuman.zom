@@ -1,0 +1,24 @@
+mem,0		; 1 set memory slot to 0
+set,5		; 2 set memory[0] to 5
+test_zombie,2	; 3 this human moves forward five times before rotating randomly
+je,14		; 4 if zombie two ahead, ranged attack
+test_zombie,1	; 5 if zombie one ahead, melee attack
+je,16		; 6
+test_mem,0	; 7 if 0, rotate randomly
+je,18 		; 8
+test_passable	; 9 if not 0, then go forward
+jne,19		; 10
+dec		; 11
+forward		; 12
+goto,3		; 13
+ranged_attack	; 14
+goto,3		; 15
+attack		; 16
+goto,3		; 17
+set,5		; 18
+test_random	; 19
+je,23		; 20
+rotate,0	; 21
+goto,3		; 22
+rotate,1	; 23
+goto,3		; 24

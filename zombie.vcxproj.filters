@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{aea4e1a6-5f75-446c-8ed6-1ea6d8d99fb0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{533deb91-4580-4a82-b36d-2c2132bb206b}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{7ef68c84-c5d0-4b1c-87e5-c1e127a1a15a}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="ZOM Files">
+      <UniqueIdentifier>{270adf41-f9e5-4ca8-b5f1-d6b1730eafcf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zombie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zombieView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="op.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZombieWorld.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zombieView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="machine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZombieWorld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="zombie.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\zombie.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="basic_movement.zom">
+      <Filter>ZOM Files</Filter>
+    </None>
+    <None Include="daryl_dixon.zom">
+      <Filter>ZOM Files</Filter>
+    </None>
+    <None Include="deer.zom">
+      <Filter>ZOM Files</Filter>
+    </None>
+    <None Include="michonne.zom">
+      <Filter>ZOM Files</Filter>
+    </None>
+    <None Include="search.zom">
+      <Filter>ZOM Files</Filter>
+    </None>
+    <None Include="stationary.zom">
+      <Filter>ZOM Files</Filter>
+    </None>
+    <None Include="the_governor.zom">
+      <Filter>ZOM Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
